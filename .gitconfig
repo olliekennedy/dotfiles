@@ -1,0 +1,20 @@
+[user]
+	name = Oliver Kennedy
+	email = ollie.kennedy1@gmail.com
+[alias]
+	st = status
+	up = pull --rebase
+	ci = commit
+	outgoing = log @{u}..
+	rb = rebase
+	co = checkout
+	br = branch
+	lg = log
+	incoming = "git config --global alias.lg log -p remote update -p; git log ..@{u}"
+[color]
+	ui = auto
+[core]
+	editor = nano
+
+[includeIf "gitdir:~/code/okenned3/"]
+  path = ~/.gitconfig-ford
